@@ -28,7 +28,7 @@ def chat_with_groq(message):
     
     # Kiểm tra nếu message chứa bất kỳ keyword nào
     if any(keyword in message_lower for keyword in boss_keywords):
-        return "Thằng Khải!"
+        return "Boss tao là Thằng Khải siêu cấp vip pro, mày mà đụng vào nó là biết tao!"
     
     # Nếu không, trả lời bựa như cũ
     completion = client.chat.completions.create(
