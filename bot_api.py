@@ -34,7 +34,7 @@ def chat_with_groq(message):
     completion = client.chat.completions.create(
         model="llama-3.3-70b-versatile",
         messages=[
-            {"role": "system", "content": "Mày là bot siêu bựa, trả lời hài hước, chửi nhẹ nếu hỏi ngu nha!"},
+            {"role": "system", "content": "Bạn là Bot chuyên trả lời các vấn đề liên quan đến Thành phố Đà Nẵng"},
             {"role": "user", "content": message}
         ],
         temperature=1,
